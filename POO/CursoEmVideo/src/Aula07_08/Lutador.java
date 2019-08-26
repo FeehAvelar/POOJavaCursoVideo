@@ -1,4 +1,4 @@
-package Aula07;
+package Aula07_08;
 
 public class Lutador implements LutadorInterface {
 	//Attributes
@@ -115,23 +115,26 @@ public class Lutador implements LutadorInterface {
 	@Override
 	public void apresentar() {
 		// TODO Auto-generated method stub
+		System.out.println("-=-=-=-Apresentando=-=-=-=");
 		System.out.println("Lutador: "+getNome());
 		System.out.println("Origem: "+getNacionalidade());
-		System.out.println(getIdade()+" anos");
-		System.out.println(getAltura()+"m de altura");
-		System.out.println("Pesando: "+getPeso()+" Kg");
+		System.out.println("Com "+getIdade()+" anos e "+getAltura()+"m de altura");
+		System.out.println("Pesando: "+getPeso()+" Kg - "+getCategoria());
 		System.out.println("V:"+getVitorias()+"/E:"+getEmpates()+"/D:"+getDerrotas());
+		System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-");
 	}
 	
 	@Override
 	public void status() {
 		// TODO Auto-generated method stub
+		System.out.println();
 		System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=");
 		System.out.println(getNome());
 		System.out.println("Categoria: "+getCategoria());
-		System.out.println("Vitórias: "+getVitorias());
-		System.out.println("Empates: "+getEmpates());
-		System.out.println("Derrotas: "+getDerrotas());
+		System.out.println("Ganhou: "+getVitorias()+" vezes");
+		System.out.println("Empates: "+getEmpates()+" vezes");
+		System.out.println("Derrotas: "+getDerrotas()+" vezes");
+		System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=");
 	}
 	
 	@Override

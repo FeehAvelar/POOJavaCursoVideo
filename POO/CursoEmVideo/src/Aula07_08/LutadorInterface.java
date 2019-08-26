@@ -1,4 +1,4 @@
-package Aula07;
+package Aula07_08;
 
 public interface LutadorInterface {
 	public abstract void apresentar ();
