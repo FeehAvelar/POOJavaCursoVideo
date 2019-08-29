@@ -13,7 +13,9 @@ public class Lutador implements LutadorInterface {
 	private int empates;
 	
 	//Constructors
-	public Lutador(String nome, String nacionalidade, int idade, float altura, float peso, int vitorias, int derrotas, int empates) {
+	public Lutador(String nome, String nacionalidade, int idade, 
+					float altura, float peso, int vitorias, 
+					int derrotas, int empates) {
 		this.setNome(nome);
 		this.setNacionalidade(nacionalidade);
 		this.setIdade(idade);

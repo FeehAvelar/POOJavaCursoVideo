@@ -2,7 +2,7 @@ package Aula07_08;
 
 import java.util.Random;
 
-public class Luta {
+public class Luta implements LutaInterface {
 	private Lutador desafiado; //Tipo Abstrato
 	private Lutador desafiante;
 	private int rounds;
@@ -95,4 +95,5 @@ public class Luta {
 			System.out.println("Luta sem aprovação.");
 		}
 	}
+
 }
