@@ -1,9 +1,10 @@
 package Aula11;
 
 public class Aluno extends Pessoa {
+	//Attributes
 	private int matricula;
 	private String curso;
-	
+	//Get && Sets
 	public int getMatricula() {
 		return this.matricula;
 	}
@@ -16,10 +17,8 @@ public class Aluno extends Pessoa {
 	public void setCurso(String curso) {
 		this.curso = curso;
 	}
-	
+	//Methodos normais
 	public void pagarMensalidade () {
-		System.out.println("Mensalidade pago com sucesso.");
-	}
-	
-	
+		System.out.println("Mensalidade do(a) aluno(a): "+this.getNome()+" paga com sucesso.");
+	}	
 }

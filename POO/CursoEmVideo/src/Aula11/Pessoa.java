@@ -1,10 +1,11 @@
 package Aula11;
 
 public abstract class Pessoa implements PessoaInterface{
+	//Atributos
 	private String nome;
 	private int idade;
 	private char sexo;
-	
+	//Get && Set
 	public String getNome() {
 		return this.nome;
 	}
@@ -23,9 +24,13 @@ public abstract class Pessoa implements PessoaInterface{
 	public void setSexo (char sexo) {
 		this.sexo = sexo;
 	}
-	
-	
-	public void fazerAniversario() {
+	//toString	
+	public String toString() {
+		return "Pessoa{\nNome: "+this.getNome()+"\nIdade: "+this.idade+"\nSexo:"+this.sexo+"\n}";
+	}
+	//Methods Interface
+	public final void fazerAniversario() {
+		//Metodos finais nao podem receber Override
 		this.setIdade(this.getIdade() + 1);
 	}
 }

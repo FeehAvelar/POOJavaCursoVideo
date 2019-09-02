@@ -1,23 +1,24 @@
 package Aula11;
+//Classe final, nunca podera ser um superclass.
+public final class Bolsista extends Aluno{
+	private float bolsa;
 
-public class Bolsista extends Aluno{
-	private int bolsa;
-
-	public int getBolsa() {
+	public float getBolsa() {
 		return bolsa;
 	}
 
-	public void setBolsa(int bolsa) {
+	public void setBolsa(float bolsa) {
 		this.bolsa = bolsa;
 	}
 
 	
 	public void renovarBolsa () {
-		System.out.println("Bolsa renovada.");
+		System.out.println("Bolsa renovada de "+this.getNome());
 	}
 	
+	@Override
 	public void pagarMensalidade () {
-		System.out.println("Mensalidade paga com sucesso.");
+		System.out.println(this.getNome()+" é bolsista, tem um pagamento facilitado.");
 	}
 
 
