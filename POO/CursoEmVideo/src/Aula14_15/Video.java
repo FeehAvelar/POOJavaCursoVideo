@@ -6,10 +6,11 @@ public class Video implements AcoesVideo{
 	private int views;
 	private int curtidas;
 	private boolean reproduzindo;
+	
 	//Constructor
 	public Video(String titulo) {
 		this.setTitulo(titulo);
-		this.setAvaliacao(1);
+		this.avaliacao = 1;
 		this.setViews(0);
 		this.setCurtidas(0);
 		this.setReproduzindo(false);
@@ -26,7 +27,9 @@ public class Video implements AcoesVideo{
 		return this.avaliacao;
 	}
 	public void setAvaliacao(int avaliacao) {
-		this.avaliacao = avaliacao;
+		int nova = (int) ((this.avaliacao + avaliacao)/this.views);
+		
+		this.avaliacao = nova;
 	}
 	public int getViews() {
 		return views;
